@@ -12,15 +12,15 @@ class CheckString
 	static char EndSymbol(char symbol)
 	{
 		if (symbol == '(')
-        {
+                {
 			return ')';
 		}	
 		if (symbol == '{')
-        {
+                {
 			return '}';
 		}
 		if (symbol == '[')
-        {
+                {
 			return ']';
 		}
 			
