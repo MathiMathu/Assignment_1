@@ -61,20 +61,20 @@ class CheckString
 	{
 
 		Console.Write("Enter the symbol: ");
-        string userInput = Console.ReadLine();
+                string userInput = Console.ReadLine();
 		char[] symbol = userInput.ToCharArray();
 		int n = symbol.Length;
 		char[] symbol1 = new char[n-2]; ;
 		if (symbol[0] == '"' && symbol[n-1] == '"')
-        {
+                {
 			for(int i = 1; i < n - 1; i++)
-            {
-				symbol1[i - 1] = symbol[i];
-            }
+                         {
+			    symbol1[i - 1] = symbol[i];
+                         }
 			Console.WriteLine(checkOrder(symbol1, n-2));
 		}
-        else
-        {
+                else
+                {
 			Console.WriteLine(checkOrder(symbol, n));
 		}
 		
